@@ -1,13 +1,13 @@
 class Patient
 
-  attr_accessor :name, :artist, :genre
+  attr_accessor :name, :doctor, :appointment
 
   ALL = []
 
-  def initialize(name="", artist="", genre="")
+  def initialize(name="", doctor="", appointment="")
     @name = name
-    @artist = artist
-    @genre = genre
+    @doctor = doctor
+    @appointment = appointment
     ALL << self
   end
 
@@ -15,8 +15,8 @@ class Patient
     ALL
   end
 
-  def artist
-    @artist
+  def doctor
+    @doctor
   end
 
 end
