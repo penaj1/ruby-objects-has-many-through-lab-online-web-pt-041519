@@ -10,7 +10,7 @@ class Doctor
   end
 
   def self.all
-    ALL
+    @@all_doctors
   end
 
   def new_appointment(date, patient)
