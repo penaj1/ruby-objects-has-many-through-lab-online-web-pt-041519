@@ -7,7 +7,7 @@ class Genre
 
   def initialize(name)
     @name = name
-    ALL << 
+    ALL << self
   end
   
   def self.all
