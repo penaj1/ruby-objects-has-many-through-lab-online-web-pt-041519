@@ -5,10 +5,6 @@ class Patient
   def initialize(name)
     @name = name
   end
-
-  def self.all
-    ALL
-  end
   
   def new_appointment(doctor, date)
     Appointment.new(self, doctor, date)
