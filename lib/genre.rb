@@ -1,17 +1,10 @@
 class Genre
 
-
-
   attr_reader :name, :genre
   attr_accessor :song
 
   def initialize(name)
     @name = name
-    ALL << self
-  end
-  
-  def self.all
-    ALL
   end
 
   def songs
