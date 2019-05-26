@@ -1,7 +1,7 @@
 class Appointment
 
-  attr_reader :name, :genre
-  attr_accessor :song
+  attr_reader :name, :Appointment
+  attr_accessor :doctor
 
   ALL = []
   
