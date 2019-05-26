@@ -14,19 +14,19 @@ class Doctor
   end
 
   def new_appointment(date, patient)
-    song = Song.new(name, self, genre)
-    self.songs.last
+    appointment = Patient.new(date, self, patient)
+    self.appointment.last
   end
 
-  def songs
-    Song.all.select do |song|
-      song.artist == self
+  def appointments
+    Patient.all.select do |appointment|
+      appointment.patient == self
     end
   end
 
-  def genres
-    Song.all.map do |song|
-      song.genre
+  def patients
+    Patient.all.map do |appointment|
+      appointment.doctor
     end
   end
 
