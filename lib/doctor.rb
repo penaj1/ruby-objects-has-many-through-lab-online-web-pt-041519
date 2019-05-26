@@ -1,6 +1,6 @@
 class Doctor
 
-  attr_accessor :name, :artist, :genre
+  attr_accessor :name, :appointment, :patient
 
   ALL=[]
 
